@@ -1,77 +1,53 @@
+body{
+    background-color: bisque;
+    margin: 0;
+}
+
 nav{
     display: flex;
     justify-content: center;
     background-color: black;
     margin: 1rem auto;
-    width: 80vw;
-    padding: 10px 20px;
-    overflow-x: auto;
-
+    width: 90%;
+    padding: 10px;
 }
+
 nav ul{
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    text-decoration: none;
+    padding: 0;
 }
+
 nav li{ 
-    padding: 20px; 
-    margin: 4px;
-    background-color:rgb(74, 74, 74);
+    padding: 10px 15px; 
+    margin: 5px;
+    background-color: rgb(74, 74, 74);
     list-style: none;
     border-radius: 10px;
 }
+
 nav a{
     text-decoration: none;
     color: white;
-
 }
-li 
-{
-    padding: 20px; ;
-    margin: 4px;
-    background-color:rgb(57, 51, 51);
 
-}
 nav li:hover{
     background-color: gray;
 }
-body{
-    background-color: bisque;
-    margin: 0;
-}
-/*  */
+
 main{
-    height: 80vh;
-    padding: 10px;
-}
-footer{
-    background-color: black;
-    padding: 10px;
-    color: white;
-}
-tr:nth-child(even){
-    background-color: aqua;
-
-}
-tr:nth-child(odd){
-    background-color: white;
-
-}
-
-.container {
-    width: 400px;
-    margin: 50px auto;
-    background: #fff;
+    min-height: 80vh;
     padding: 20px;
-    border-radius: 10px;
 }
 
-h2 {
-    text-align: center;
+form{
+    max-width: 500px;
+    margin: auto;
 }
 
-input, textarea {
+input, textarea, select {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
@@ -91,4 +67,94 @@ button {
 
 button:hover {
     background-color: #0056b3;
+}
+
+footer{
+    background-color: black;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+@media (max-width: 600px){
+    nav ul{
+        flex-direction: column;
+    }
+
+    nav li{
+        width: 100%;
+        text-align: center;
+    }
+}
+form{
+    max-width: 500px;
+    margin: 30px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+form label{
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0,123,255,0.3);
+}
+
+textarea{
+    resize: none;
+}
+
+button {
+    margin-top: 15px;
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(45deg, #007BFF, #00c6ff);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.03);
+    opacity: 0.9;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+}
+
+th, td{
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+th{
+    background-color: #007BFF;
+    color: white;
+}
+
+tr:nth-child(even){
+    background-color: #f2f2f2;
 }
