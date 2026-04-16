@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>course management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="course.html">course</a></li>
+            <li><a href="addcourse.html">add course</a></li>
+            <li><a href="contact.html">contact us</a></li>
+        </ul>
+    </nav>
+    <main>
+
+        <form>
+            <label for="courseTitle">Course Title:</label><br>
+            <input type="text" id="courseTitle" name="courseTitle" placeholder="enter course title" required><br><br>
+
+            <label for="instructor">Instructor Name:</label><br>
+            <input type="text" id="instructor" name="instructor" required><br><br>
+
+            <label for="level">Level:</label><br>
+            <select id="level" name="level">
+                <option value="beginner">Beginner</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="advanced">Advanced</option>
+            </select><br><br>
+
+            <label for="description">Course Description:</label><br>
+            <textarea id="description" name="description" rows="4"></textarea><br><br>
+
+            <button type="submit">Add Course</button>
+        </form>
+    </main>
+    <footer>
+        <p>@ my page</p>
+    </footer>
+</body>
+</html>
